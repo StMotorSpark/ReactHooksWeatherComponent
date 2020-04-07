@@ -57,7 +57,7 @@ function WeatherDisplay() {
     var min = convertKelvinToFahrenheit(currentWeather.main.temp_min);
     var max = convertKelvinToFahrenheit(currentWeather.main.temp_max);
 
-    // determine the icon class here
+    // determine the icon class here in the future
     var weatherIcon = <div className="icon-sun wetherIcon"></div>;
 
     currentWeatherDisplay = [

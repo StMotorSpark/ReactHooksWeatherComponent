@@ -5,6 +5,7 @@ import "../fontIcons/styles.css";
 const useState = React.useState;
 const useEffect = React.useEffect;
 
+// you will need to use your API key from OpenWeather here
 const apiKey = "5946fb47d8d48875b39e72827aedeaff";
 const countryCode = "us";
 const apiEndpoint = `https://api.openweathermap.org/data/2.5/weather`;
@@ -75,7 +76,7 @@ function WeatherDisplay() {
    */
   var currentWeatherDisplay = null;
   if (currentWeather !== null) {
-    // determine the icon class here
+    // determine the icon class here in the future
     var weatherIcon = <div className="icon-sun wetherIcon"></div>;
 
     currentWeatherDisplay = [
