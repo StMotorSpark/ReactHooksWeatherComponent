@@ -1,0 +1,41 @@
+.weatherCard {
+  display: grid;
+  width: 25vw;
+  height: 30vh;
+  background-color: #90caf9;
+  color: black;
+  grid-template-columns: 25fr 15fr 60fr;
+  grid-template-rows: 20fr 15fr 15fr 50fr;
+  grid-template-areas:
+    "header header header"
+    "current current range"
+    "current current desc"
+    "iconDisp future future";
+  border-radius: 1vw;
+}
+
+.weatherHeader {
+  grid-area: header;
+  font-weight: 600;
+}
+
+.weatherCurrent {
+  grid-area: current;
+}
+
+.weatherRange {
+  grid-area: range;
+}
+
+.wetherIcon {
+  grid-area: iconDisp;
+  font-size: 5vh;
+}
+
+.weatherDescription {
+  grid-area: desc;
+}
+
+.weatherFuture {
+  grid-area: future;
+}
